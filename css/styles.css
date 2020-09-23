@@ -1,0 +1,83 @@
+#heroIndex {
+    background: url("/img/cat-4912949_1280.webp") no-repeat center fixed;
+    margin-bottom: 0px;
+}
+
+#heroMenu {
+    background: url("/img/heroMenuImg.jpg") no-repeat center;
+    margin-bottom: 0px;
+}
+
+#heroKitties {
+    background: url("/img/Green-eyes-cat-closeup.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+
+
+.btn-primary {
+    background-color: #c60063;
+    border-color: #c60063;
+}
+
+#herobtn {
+    margin: 50px;
+    padding: 20px 70px;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#hero {
+    margin-bottom: 50px;
+}
+
+#infoText {
+    padding: 50px;
+}
+.card-deck {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+    
+}
+
+.site-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.fa {
+    padding-top: 10px;
+}
+
+#secondAddLine {
+    margin-left: 32px;
+}
+
+#footerCTA {
+    margin-top: 25px;
+}
+
+#kitHeader {
+    z-index: 500;
+}
+
+#overlay {
+    width: 50%;
+    margin: 85px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
