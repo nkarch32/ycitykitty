@@ -4,7 +4,7 @@
 }
 
 #heroMenu {
-    background: url("/img/heroMenuImg.jpg") no-repeat center;
+    background: url("/img/coffeeandcake.jpg") repeat center center fixed;
     margin-bottom: 0px;
 }
 
@@ -14,6 +14,13 @@
     margin-bottom: 0px;
     padding-bottom: 0px;
 
+}
+
+#heroContact {
+    background: url("/img/mailbox.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 
@@ -81,3 +88,17 @@
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
 }
+
+#headerLogo {
+    border-radius: 50%;
+    border: solid black;
+    height: 120px;
+    width: 90px;
+}
+
+.navbar {
+    background: rgb(235, 233, 233);
+    
+
+}
+
