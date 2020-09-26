@@ -24,7 +24,7 @@
     <div class="container">
             <div class="row" id="headerJumbo">
                 <div class="col-4 col-sm-3 col-md-2 align-items-center">
-                    <img src="/img/divTheCat.PNG" id="headerLogo" class="img-fluid" />
+                  <a href="/index.html"><img src="/img/divTheCat.PNG" id="headerLogo" class="img-fluid" /></a>
                 </div>
                 <div class="col">
                     <h1>Y-City Kitty</h1>
@@ -50,13 +50,10 @@
             <a class="nav-link" href="/ourMenu.html">Our Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Meet the Kitties</a>
+            <a class="nav-link" href="/meetTheKitties.html">Meet the Kitties</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/aboutUs.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/contact.html">Contact</a><span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="/contact.html">Contact</a><span class="sr-only">(current)</span>
           </li>
         </ul>
       </div>
@@ -77,50 +74,60 @@
 
 <!-- modal calendar booking feature for "Book Your Visit" button-->
 
-  <div class="modal fade" id="bookVisitModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-dark text-white">
-          <h3 class="modal-title">Book Your Visit</h3>
-          <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="bookVisitModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h3 class="modal-title">Book Your Visit</h3>
+        <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="formModal">
+          <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="name">Name (First and Last)</label>
+            </div>
+            <div class="col">
+              <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First and Last Name">
+            </div>
+          </div>
+      
+        <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="numGuests" class="col-form-label">Number of Guests</label>
+            </div>
+            <div class="col">
+              <select class="form-control" name="numGuests" id="numGuests">
+                <option selected>Select...</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+              </select> 
+            </div>
         </div>
-        <div class="modal-body">
-          <form id="formModal">
-            <div class="form-group row">
-              <div class="col-sm-6">
-                <label for="numGuests" class="col-form-label">Number of Guests</label>
-              </div>
-              <div class="col">
-                <select class="form-control" name="numCampers" id="numCampers">
-                  <option selected>Select...</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                </select> 
-              </div>
+        
+     
+          <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="dateOfVisit" class="col-form-label">Date</label>
             </div>
-            <div class="form-group row">
-              <div class="col-sm-6">
-                <label for="dateOfVisit" class="col-form-label">Date</label>
-              </div>
-              <div class="col">
-                <input type="datetime-local" class="form-control" name="dateOfVisit" id="dateOfVisit">
-              </div>
+            <div class="col">
+              <input type="datetime-local" class="form-control" name="dateOfVisit" id="dateOfVisit">
             </div>
-            <div class="form-group row">
-              <div class="col">
-                <button type="submit" class="btn btn-primary btn-sm mt-3">Reserve My Spot</button>
-              </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <button type="submit" class="btn btn-primary btn-sm mt-3">Reserve My Spot</button>
             </div>
-          </form>
-          <hr class="clearfix w-100 pb-3">
-          <!-- "what to expect" section? link that takes people to about us page?-->
-        </div>
+          </div>
+        </form>
+        <hr class="clearfix w-100 pb-3">
       </div>
     </div>
   </div>
+</div>
  
 <!-- contact info card -->
 
@@ -238,7 +245,6 @@
           <li><a href="#" class="text-white">Home</a></li>
           <li><a href="/ourMenu.html" class="text-white">Our Menu</a></li>
           <li><a href="/meetTheKitties.html" class="text-white">Meet the Kitties</a></li>
-          <li><a href="/aboutUs.html" class="text-white">About Us</a></li>
           <li><a href="/contact.html" class="text-white">Contact</a></li>
       </div>
       <div class="col-md-3 mb-md-0 mb-3">

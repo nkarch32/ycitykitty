@@ -1,5 +1,5 @@
 #heroIndex {
-    background: url("/img/cat-4912949_1280.webp") no-repeat center fixed;
+    background: url("/img/cctwocats.jpg") repeat center fixed;
     margin-bottom: 0px;
 }
 
@@ -25,13 +25,33 @@
 
 
 .btn-primary {
-    background-color: #c60063;
-    border-color: #c60063;
+    border-color: black;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    
+}
+
+.card-footer .btn-primary:hover {
+    background-color: blue;
+    color: white; 
 }
 
 #herobtn {
     margin: 50px;
     padding: 20px 70px;
+    background-color: magenta;
+    color: white;
+    font-weight: 900;
+    border: none;
+}
+
+#herobtn:hover {
+    background-color: blue;
+    color: white;
+    border-color: black;
 }
 
 .jumbotron {
@@ -70,6 +90,16 @@
 
 #footerCTA {
     margin-top: 25px;
+    background-color: magenta;
+    color: white;
+    font-weight: 900;
+    border: none;
+}
+
+#footerCTA:hover {
+    background-color: blue;
+    color: white;
+    border-color: black;
 }
 
 #kitHeader {
@@ -101,4 +131,3 @@
     
 
 }
-

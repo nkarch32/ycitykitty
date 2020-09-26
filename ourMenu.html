@@ -18,24 +18,25 @@
 
 <body>
 
-  <!-- jumbotron header containing logo -->
+   <!-- jumbotron header containing logo -->
 
-  <header class="jumbotron jumbotron-fluid">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-6 col-lg-6">
-          <a href="#"><img class="navbar-brand" id="headerLogo" src="img/short-fur-black-cat-thumbnail.jpg" class="img-fluid" style="border-radius: 25%;" /></a>
-        </div>
-        <div class="col-lg-6 pt-2 pb-2">
-          <h1>Y-City Kitty</h1>
-          <h2>For Coffee. For Cats. For Community.</h2>
-        </div>
-      </div>
+   <header class="jumbotron jumbotron-fluid"> <!--one col per section: logo, Nucamp, reservation button-->
+    <div class="container">
+            <div class="row" id="headerJumbo">
+                <div class="col-4 col-sm-3 col-md-2 align-items-center">
+                  <a href="/index.html"><img src="/img/divTheCat.PNG" id="headerLogo" class="img-fluid" /></a>
+                </div>
+                <div class="col">
+                    <h1>Y-City Kitty</h1>
+                    <h2>Coffee, cats, community.</h2>
+                </div>
+          </div>
     </div>
+  </header> 
 
     <!-- navigation bar -->
 
-    <nav class="navbar navbar-expand-sm navbar-light mt-3">
+    <nav class="navbar navbar-expand-sm navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,16 +44,13 @@
         <a id="herobtn" class="btn btn-primary btn-sm text-center text-white" data-toggle="modal" data-target="#bookVisitModal"  role="button">Book Your Visit Today!</a>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/ourMenu.html">Our Menu</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Meet the Kitties</a>
+            <a class="nav-link active" href="#">Our Menu</a><span class="sr-only">(current)</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/aboutUs.html">About Us</a>
+            <a class="nav-link" href="/meetTheKitties.html">Meet the Kitties</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact.html">Contact</a>
@@ -61,6 +59,7 @@
       </div>
     </nav>
   </header>
+
 
   <!-- here we attempt a hero image with "Our Menu" header -->
   <header id="heroMenu" class="jumbotron jumbotron-fluid">
@@ -75,147 +74,171 @@
 
 <!-- modal calendar booking feature for "Book Your Visit" button-->
 
-  <div class="modal fade" id="bookVisitModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-dark text-white">
-          <h3 class="modal-title">Book Your Visit</h3>
-          <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form id="formModal">
-            <div class="form-group row">
-              <div class="col-sm-6">
-                <label for="numGuests" class="col-form-label">Number of Guests</label>
-              </div>
-              <div class="col">
-                <select class="form-control" name="numCampers" id="numCampers">
-                  <option selected>Select...</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                </select> 
-              </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-sm-6">
-                <label for="dateOfVisit" class="col-form-label">Date</label>
-              </div>
-              <div class="col">
-                <input type="datetime-local" class="form-control" name="dateOfVisit" id="dateOfVisit">
-              </div>
-            </div>
-            <div class="form-group row">
-              <div class="col">
-                <button type="submit" class="btn btn-primary btn-sm mt-3">Reserve My Spot</button>
-              </div>
-            </div>
-          </form>
-          <hr class="clearfix w-100 pb-3">
-          <!-- "what to expect" section? -->
-        </div>
+<div class="modal fade" id="bookVisitModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h3 class="modal-title">Book Your Visit</h3>
+        <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
       </div>
-    </div>
-  </div>
-
-<!-- informational blurb and some tabs showcasing different menu options -->
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <h3>Locally crafted with a global vision.</h3>
-      <h4 class="font-weight-light italic">Our menu combines the best of Zanesville with an international flare. 
-        Enjoy ethically-sourced coffees, European-style pastries, Mediterranean-inspired tapas, and craft beer from home 
-        and abroad. Come dine with us!</h4>
-    </div>
-    <div class="col-lg-6">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="coffeeTea" data-toggle="tab" href="#coffeeTea" role="tab" aria-controls="coffeeTea" aria-selected="true">Coffee and Teas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="wineBeer" data-toggle="tab" href="#wineBeer" role="tab" aria-controls="wineBeer" aria-selected="false">Wines, Beer, Spirits</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Baked Goods and Tapas</a>
-        </li>
-      </ul>
-      <div class="tab-content">
-        <div class="tab-pane fade show active" id="coffeeTea" role="tabpanel" aria-labelledby="coffeeTea">
-          <div class="table-responsive-lg">
-            <table class="table">
-              <table class="table table-sm table-light">
-                <thead>
-                  <tr>
-                    <th scope="col">Hot Drinks</th>
-                    <th scope="col">Cold Drinks</th>
-                    <th scope="col">Seasonal Treats</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Pour-Over Coffee $2.50</td>
-                    <td>Iced Coffee $2.50</td>
-                    <td>Pumpkin Spice Latte $3.50</td>              
-                  </tr>
-                  <tr>
-                    <td>Americano $2.50</td>
-                    <td>Iced Matcha Latte $3.50</td>
-                    <td>Caramel Apple Latte $3.50</td>
-                  </tr>
-                  <tr>
-                    <td>Cappuccino $3.00</td>
-                    <td>Iced Chai Tea Latte $3.50</td>
-                  </tr>
-            </table>
-          </div>
-        </div>
-          <div class="tab-pane fade" id="wineBeer" role="tabpanel" aria-labelledby="wineBeer">
-            <div class="table-responsive-lg">
-              <table class="table">
-                <table class="table table-sm table-light">
-                  <thead>
-                    <tr>
-                      <th scope="col">Wines</th>
-                      <th scope="col">Beer</th>
-                      <th scope="col">Spirits</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Red Wine</td>
-                      <td>Iced Coffee $2.50</td>
-                      <td>Pumpkin Spice Latte $3.50</td>              
-                    </tr>
-                    <tr>
-                      <td>Americano $2.50</td>
-                      <td>Iced Matcha Latte $3.50</td>
-                      <td>Caramel Apple Latte $3.50</td>
-                    </tr>
-                    <tr>
-                      <td>Cappuccino $3.00</td>
-                      <td>Iced Chai Tea Latte $3.50</td>
-                    </tr>
-              </table>
+      <div class="modal-body">
+        <form id="formModal">
+          <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="name">Name (First and Last)</label>
+            </div>
+            <div class="col">
+              <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First and Last Name">
             </div>
           </div>
+      
+        <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="numGuests" class="col-form-label">Number of Guests</label>
+            </div>
+            <div class="col">
+              <select class="form-control" name="numGuests" id="numGuests">
+                <option selected>Select...</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+              </select> 
+            </div>
         </div>
-
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-
-        </div>
+        
+     
+          <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="dateOfVisit" class="col-form-label">Date</label>
+            </div>
+            <div class="col">
+              <input type="datetime-local" class="form-control" name="dateOfVisit" id="dateOfVisit">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <button type="submit" class="btn btn-primary btn-sm mt-3">Reserve My Spot</button>
+            </div>
+          </div>
+        </form>
+        <hr class="clearfix w-100 pb-3">
       </div>
     </div>
   </div>
 </div>
 
+<!-- informational blurb and some tabs showcasing different menu options -->
+
+<div class="container mt-5 mb-5 py-5" id="menuBlurb">
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center">Locally crafted with a global vision.</h3>
+      <h4 class="font-weight-light italic text-center">Our menu combines the best of Zanesville with an international flare. 
+        Enjoy ethically-sourced coffees, Mediterranean-inspired tapas, and spirits from home and abroad. Come dine with us!</h4>
+    </div>
+  </div>
+</div>
+
+<!-- menu tab with tables within -->
+
+<div class="container mb-5">
+  <div class="row">
+    <div class="col"> 
+    <ul class="nav nav-tabs" id="menuTabs" role="tablist">
+        <li class="nav-item"><a class="nav-link active bg-dark text-white" data-toggle="tab" href="#coffee" role="tab" aria-controls="coffee" aria-selected="true">Coffee and Tea</a></li>
+        <li class="nav-item"><a class="nav-link bg-dark text-white" data-toggle="tab" href="#wine" role="tab" aria-controls="wine" aria-selected="false">Wines, Beer, Spirits</a></li>
+        <li class="nav-item"><a class="nav-link bg-dark text-white" data-toggle="tab" href="#bakery" role="tab" aria-controls="bakery" aria-selected="false">Bakery and Tapas</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="coffee" class="tab-pane fade in show active">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Hot Drinks</th>
+                        <th scope="col">Cold Drinks</th>
+                        <th scope="col">Seasonal Treats *for a limited time!</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hot Coffee $2.50</td>
+                        <td>Iced Coffee $2.50</td>
+                        <td>Pumpkin Spice Latte $3.50</td>              
+                    </tr>
+                    <tr>
+                        <td>Americano $2.50</td>
+                        <td>Iced Matcha Latte $3.50</td>
+                        <td>Caramel Apple Latte $3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino $3.00</td>
+                        <td>Iced Chai Tea Latte $3.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="wine" class="tab-pane fade">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Wine</th>
+                        <th scope="col">Beer</th>
+                        <th scope="col">Spirits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ohio Vineyards Merlot (2018). . .$8.00</td>
+                        <td>Zanesville Brews Stout. . .$8.00</td>
+                        <td>Bloody Mary. . .$10.00</td>              
+                    </tr>
+                    <tr>
+                        <td>Great Bass Vineyard Pinot Grigio (2019). . .$8.00</td>
+                        <td>Zanesville Brews IPA. . .$8.00</td>
+                        <td>Martini. . .$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Victorianbourg Winery Dark Chocolate Wine (2020). . .$8.00</td>
+                        <td>Augenblick Oktoberfest (Berlin). . .$8.00</td>
+                        <td>Gin and Tonic. . .$8.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>**Alcoholic beverages are not permitted in the cat lounge.**</strong></p>
+        </div>
+        <div id="bakery" class="tab-pane fade">
+             <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Tapas</th>
+                        <th scope="col">Bakery Items</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sauteed Mushrooms w/Tarragon. . .$10.00</td>
+                        <td>Muffins (assorted). . .$3.00/ea</td>          
+                    </tr>
+                    <tr>
+                        <td>Chickpeas and Chorizo. . .$10.00</td>
+                        <td>Gigantic Kitty Cookie. . .$4.00/ea</td>
+                    </tr>
+                    <tr>
+                        <td>Patatas Bravas. . .$10.00</td>
+                        <td>Pumpkin Spice Bread. . .$1.50/slice; $6.00/loaf</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>     
+
 <!-- index page footer -->
-<!-- dev note: at first, I wanted to include an embedded Google Map feature. But then I found out, after a certain
-number of engagements with the feature, you have to pay Google. I instead opted for an fa icon for map and an address. 
-I also used the footer template from https://mdbootstrap.com/docs/jquery/navigation/footer/ to help me create a responsive
-footer. -->
 
 <footer class="page-footer bg-dark font-small text-white pt-4">
   <div class="container-fluid text-center text-md-left">
@@ -223,7 +246,7 @@ footer. -->
       <div class="col-md-6 mt-md-0 mt-3 pl-5">
         <h5>Y-City Kitty</h5>
         <h6>For coffee. For cats. For community.</h6>
-        <a href="#"><img src="img/short-fur-black-cat-thumbnail.jpg" width="200px" id="footerLogo" class="img-fluid mt-2 mb-3" style="border-radius: 25%;"/></a>
+        <a href="./index.html"><img src="/img/divTheCat.PNG" id="headerLogo" class="img-fluid mt-2 mb-3" /></a>
         <h5>Hours</h5>
         <p>Cat Lounge: 12 pm - 5 pm</p>
         <p>Dining Room: 9 am - 5 pm</p>
@@ -234,10 +257,9 @@ footer. -->
       <div class="col-md-3 mb-md-0 mb-3">
         <h5>Quick Links</h5>
         <ul class="list-unstyled">
-          <li><a href="#" class="text-white">Home</a></li>
-          <li><a href="/ourMenu.html" class="text-white">Our Menu</a></li>
+          <li><a href="/index.html" class="text-white">Home</a></li>
+          <li><a href="#" class="text-white">Our Menu</a></li>
           <li><a href="/meetTheKitties.html" class="text-white">Meet the Kitties</a></li>
-          <li><a href="/aboutUs.html" class="text-white">About Us</a></li>
           <li><a href="/contact.html" class="text-white">Contact</a></li>
       </div>
       <div class="col-md-3 mb-md-0 mb-3">
